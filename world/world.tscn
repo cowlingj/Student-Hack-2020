@@ -1,0 +1,65 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://world/player/player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://world/static/floor.tscn" type="PackedScene" id=2]
+[ext_resource path="res://world/static/gradienttexture.tres" type="Texture" id=3]
+[ext_resource path="res://world/enemy/enemy.tscn" type="PackedScene" id=4]
+
+[sub_resource type="VisualShaderNodeTexture" id=3]
+output_port_for_preview = 0
+texture = ExtResource( 3 )
+texture_type = 1
+
+[sub_resource type="VisualShader" id=1]
+code = "shader_type spatial;
+uniform sampler2D tex_frg_2 : hint_albedo;
+
+
+
+void vertex() {
+// Output:0
+
+}
+
+void fragment() {
+// Texture:2
+	vec4 tex_frg_2_read = texture(tex_frg_2, UV.xy);
+	vec3 n_out2p0 = tex_frg_2_read.rgb;
+	float n_out2p1 = tex_frg_2_read.a;
+
+// Output:0
+	ALBEDO = n_out2p0;
+	ALPHA = n_out2p1;
+
+}
+
+void light() {
+// Output:0
+
+}
+"
+graph_offset = Vector2( -394.667, -147.25 )
+nodes/fragment/0/position = Vector2( 420, 180 )
+nodes/fragment/2/node = SubResource( 3 )
+nodes/fragment/2/position = Vector2( -220, 60 )
+nodes/fragment/connections = PoolIntArray( 2, 0, 0, 0, 2, 1, 0, 1 )
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = SubResource( 1 )
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Environment" type="Node" parent="."]
+
+[node name="Floor" parent="Environment" instance=ExtResource( 2 )]
+
+[node name="MeshInstance" parent="Environment/Floor" index="0"]
+material/0 = SubResource( 2 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.20282, 0 )
+
+[node name="Enemy" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1775, -3.61626 )
+
+[editable path="Environment/Floor"]
