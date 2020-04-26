@@ -1,0 +1,125 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="ambient-loop_data" version="1.3.0" audacityversion="2.3.3" sel0="17.7933755675" sel1="17.7933755675" vpos="0" h="17.5429312921" zoom="507.0988338196" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags/>
+	<wavetrack name="cricket ambienc276" isSelected="1" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="812819">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f8a1.au" len="262144" min="-0.201896" max="0.255875" rms="0.059382"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="eff1f888.au" len="262144" min="-0.575853" max="0.360428" rms="0.141026"/>
+				</waveblock>
+				<waveblock start="524288">
+					<simpleblockfile filename="eff1f603.au" len="145121" min="-0.523318" max="0.380832" rms="0.1366"/>
+				</waveblock>
+				<waveblock start="669409">
+					<simpleblockfile filename="eff1f1dc.au" len="143410" min="-0.455428" max="0.34906" rms="0.135998"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="cricket ambienc276" isSelected="1" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="812819">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f3fe.au" len="262144" min="-0.198525" max="0.247305" rms="0.061698"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="eff1fa63.au" len="262144" min="-0.476887" max="0.336375" rms="0.104779"/>
+				</waveblock>
+				<waveblock start="524288">
+					<simpleblockfile filename="eff1f056.au" len="145121" min="-0.275969" max="0.281311" rms="0.078873"/>
+				</waveblock>
+				<waveblock start="669409">
+					<simpleblockfile filename="eff1f6d7.au" len="143410" min="-0.262969" max="0.267705" rms="0.078965"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="cricket ambienc276" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="18.40272424" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="93711">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f614.au" len="93711" min="-0.205284" max="0.220477" rms="0.077734"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="cricket ambienc276" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="18.40272424" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="93711">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f5ea.au" len="93711" min="-0.304655" max="0.158634" rms="0.069123"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="cricket ambienc276" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="17.91791383" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="117306">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f64a.au" len="117306" min="-0.267352" max="0.1575" rms="0.068433"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="cricket ambienc276" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="17.91791383" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="117306">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f3b7.au" len="117306" min="-0.253879" max="0.21173" rms="0.061629"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="cricket ambienc276" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.584893" pan="-0.2" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="805708">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f134.au" len="258049" min="-0.18527" max="0.231544" rms="0.05674"/>
+				</waveblock>
+				<waveblock start="258049">
+					<simpleblockfile filename="eff1fcf5.au" len="262144" min="-0.552642" max="0.330411" rms="0.13807"/>
+				</waveblock>
+				<waveblock start="520193">
+					<simpleblockfile filename="eff1f6b2.au" len="142757" min="-0.499623" max="0.365373" rms="0.139818"/>
+				</waveblock>
+				<waveblock start="662950">
+					<simpleblockfile filename="eff1fe3c.au" len="142758" min="-0.220721" max="0.149248" rms="0.06822"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="cricket ambienc276" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.584893" pan="-0.2" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="805708">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f81c.au" len="258049" min="-0.178804" max="0.211434" rms="0.057882"/>
+				</waveblock>
+				<waveblock start="258049">
+					<simpleblockfile filename="eff1ffc7.au" len="262144" min="-0.461294" max="0.32185" rms="0.104457"/>
+				</waveblock>
+				<waveblock start="520193">
+					<simpleblockfile filename="eff1ff2a.au" len="142757" min="-0.239565" max="0.257934" rms="0.075094"/>
+				</waveblock>
+				<waveblock start="662950">
+					<simpleblockfile filename="eff1fcb0.au" len="142758" min="-0.239794" max="0.12242" rms="0.034154"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="cricket ambienc276" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.584893" pan="-0.2" colorindex="0"/>
+	<wavetrack name="cricket ambienc276" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.584893" pan="-0.2" colorindex="0"/>
+	<wavetrack name="cricket ambienc276" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.584893" pan="0.0" colorindex="0"/>
+	<wavetrack name="cricket ambienc276" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.584893" pan="0.0" colorindex="0"/>
+</project>
