@@ -21,6 +21,7 @@ export(float) var STAMINA_REGEN_EXHAUSTED = 0.1
 export(float) var STAMINA_REGEN = 0.25
 export(float) var SPRINT_STAMINA_COST = 0.2
 export(float) var MAX_STAMINA = 1
+export(float) var GRAVITY = 1
 
 var velocity = Vector3()
 var exhausted = false
@@ -28,6 +29,8 @@ var stamina = MAX_STAMINA
 
 func _physics_process(delta):
 	handle_player_input(delta)
+	velocity += Vector3.DOWN * GRAVITY
+	velocity = move_and_slide(velocity, Vector3.UP)
 	
 	
 func handle_player_input(delta):	
@@ -38,11 +41,9 @@ func handle_player_input(delta):
 	
 	# Get the camera's transform basis, but remove the X rotation such
 	# that the Y axis is up and Z is horizontal.
-	# var cam_basis = $Target/Camera.global_transform.basis
-	# var basis = cam_basis.rotated(cam_basis.x, -cam_basis.get_euler().x)
-	# dir = basis.xform(dir)
-		
-	dir = dir.normalized()
+	var cam_basis = $ClippedCamera.global_transform.basis
+	var basis = cam_basis.rotated(cam_basis.x, -cam_basis.get_euler().x)
+	dir = basis.xform(dir)
 		
 	var speed = WALKING_SPEED
 	var stamina_cost = -STAMINA_REGEN
@@ -66,9 +67,6 @@ func handle_player_input(delta):
 	velocity.x = dir.x * speed
 	velocity.z = dir.z * speed
 	velocity.y = 0
-		
-	velocity = move_and_slide(velocity, Vector3.UP)
 
 func on_collision_with_enemy(_enemy):
 	print('dead')
-	push_error("dead")
